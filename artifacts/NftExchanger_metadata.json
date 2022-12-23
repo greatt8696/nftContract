@@ -159,7 +159,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "tranferFrom",
+				"name": "transferFrom",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -287,11 +287,11 @@
 			]
 		},
 		"nftExchanger.sol": {
-			"keccak256": "0x85e0eb85e4fec6de621ad5670dcc45e111244a91cd60a93e6859861a2a7043a2",
+			"keccak256": "0x4525777a7ae47c5f3e2519a10eb271fb4085387107648260dde6caa3386052e6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6cea5a1729296e68ad9798842d02df028c4c8c1c9e9dd6d12698aa328d0f2e1f",
-				"dweb:/ipfs/Qmeb14UyLopRwQvf9xvZHEyGPw17kkowUmTXxPQp2JanPA"
+				"bzz-raw://9b2c27bdd2bc26ddde2a579ea240716fa87287ec83ff6f13112fbf9a81206a4b",
+				"dweb:/ipfs/Qme1RHHZVVEoug2zqHAcwfMy9pWrLm4vfD9zMhRTsXuWXP"
 			]
 		}
 	},
