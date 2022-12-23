@@ -495,11 +495,11 @@
 			]
 		},
 		"GgyuToken.sol": {
-			"keccak256": "0x2907836a4f64ed917830f8ea8069a716c9bc4276a07d554640c1058ed52fd678",
+			"keccak256": "0x9ad0ee751e246c1719a388282474cb73a24a09e55f900f122e9c3f9e5f00e45c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d9d0a9da9937e0802dd153effee0f6742d1eaf2fa21587bc95c46c92b8ce1c97",
-				"dweb:/ipfs/QmV5M18KEXRD7Lsy9gE5siSLFf75ZNaXcj9ZcQQHKoAzdA"
+				"bzz-raw://8671a19d2cf99536c33a3700aecb96881108a07cbc3f1a3f98ce7eb33a6f89b6",
+				"dweb:/ipfs/QmXXgLLAPkSWhnnz4qxrnLE3odqVy3VN35V2dxcWeJoQfz"
 			]
 		}
 	},

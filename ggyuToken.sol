@@ -7,7 +7,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract GgyuToken is ERC20, Ownable {
     uint256 private _exchangeRate = 1000;
 
-    constructor() ERC20("GgyuToken", "GYU") {}
+    constructor() ERC20("GgyuToken", "GYU") {
+    }
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);

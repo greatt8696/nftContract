@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "exchangeOperatorCA",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -667,11 +673,11 @@
 			]
 		},
 		"EquipToken.sol": {
-			"keccak256": "0x4526b16f4fafac6df3b8d6c370474a5129d9232912c6441fb4cd914aac06035b",
+			"keccak256": "0x84ba2c2cf46f55aa56396c26674e788a22a874d2407dc5d9f69025d3005aa465",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1b0688009a12aa254a46be5d038dcfe5e5699481e5da802010be3fcf5c5a8f3",
-				"dweb:/ipfs/QmVHudCLwwK3xxRjGy6TTvfYYWARhT3rtZJe7gxz2RWExu"
+				"bzz-raw://14873cb17c69062bc34c0274c437267d7e0efb05852a438e6ef22f851dc62d98",
+				"dweb:/ipfs/QmaV9S5YP2r79W5AFHwf3LzGa2eGLjgqX4qF8E8M3VjUR3"
 			]
 		}
 	},

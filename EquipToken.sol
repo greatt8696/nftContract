@@ -12,7 +12,9 @@ contract EquipToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("EquipToken", "EQT") {}
+    constructor(address exchangeOperatorCA) ERC721("EquipToken", "EQT") {
+        setApprovalForAll(exchangeOperatorCA, true);
+    }
 
     function safeMint(address to, string memory uri) public onlyOwner {
         uint256 tokenId = _tokenIdCounter.current();
