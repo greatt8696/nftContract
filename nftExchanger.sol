@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "./nft.sol";
-
 contract NftExchanger {
     event ApplySale(address indexed applyer, uint256, uint256);
     event Sale(address indexed buyer, address indexed seller, uint256, uint256);

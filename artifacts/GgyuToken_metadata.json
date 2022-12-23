@@ -440,7 +440,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ggyuToken.sol": "GgyuToken"
+			"GgyuToken.sol": "GgyuToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -494,7 +494,7 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"ggyuToken.sol": {
+		"GgyuToken.sol": {
 			"keccak256": "0x2907836a4f64ed917830f8ea8069a716c9bc4276a07d554640c1058ed52fd678",
 			"license": "MIT",
 			"urls": [
