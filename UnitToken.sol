@@ -60,7 +60,7 @@ contract UnitToken is ERC721, ERC721Enumerable, Ownable {
         return super.supportsInterface(interfaceId);
     }
 
-    function getTokensURI(address account)
+    function getTokenURIs(address account)
         public
         view
         returns (string[] memory)
