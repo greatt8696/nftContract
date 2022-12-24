@@ -11,6 +11,50 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "max",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "tokenIds",
+						"type": "uint256[]"
+					}
+				],
+				"name": "Check",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getRandomNumber",
 				"outputs": [
@@ -20,7 +64,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -38,7 +82,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "randomNumber",
+				"name": "mintNft",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "start",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,8 +107,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "start",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenIds",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -90,12 +153,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"RandomNumber.sol": {
-			"keccak256": "0x02a5d2dedb171672c9b4c8323cd483c9657410c4d72c9092ab75f30ba902d225",
+		"@openzeppelin/contracts/utils/Counters.sol": {
+			"keccak256": "0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://61454121c775560c50aa07a21ddbddaa313903344800994a2772077511639cb9",
-				"dweb:/ipfs/QmSFbGk1EnbHRLWbKvmL513u8ZZhomRBESfWrsH4rkTfe8"
+				"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee",
+				"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu"
+			]
+		},
+		"RandomNumber.sol": {
+			"keccak256": "0xce211987ec12db89eabecf4c8a2748d8e6db78f1aa814c772bc817f5375b0087",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e78163dd9313752ba09066eaf2a832836432cc5e35d6890b076bd0e4a8d89f2c",
+				"dweb:/ipfs/QmZ6sPRDr4t9e3eG4PnmAVu9LNMcsHh3AH9oyViZn5N6gL"
 			]
 		}
 	},

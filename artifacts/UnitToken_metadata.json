@@ -170,6 +170,44 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "getOwnedTokenIds",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "getTokenURIs",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "owner",
 						"type": "address"
 					},
@@ -663,11 +701,11 @@
 			]
 		},
 		"UnitToken.sol": {
-			"keccak256": "0xe79762a64712aec91a0b801db6c33e46cce6fd3e63b5438b748d8f2a7d2db8c2",
+			"keccak256": "0x0c06bf9682a09f5d6d843d844906e0d68ef837021dce415c73d385353cadcc6c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b2a620776839d465f4e7a7d5f2d7d9647083ea36fd7b9a8712e070ba146654c",
-				"dweb:/ipfs/QmTbn2SAL8t6sU2r7gQYNCuPGKEHYP1cE2rkotft7AM2i9"
+				"bzz-raw://cfaecc0516b7211a1bc03e0daa2da626836987701528eabcec8a0f03b469b3e7",
+				"dweb:/ipfs/Qma8AZBzVYvWZpgHait4FTu6yQzVHXWYednb4zXYgW7KYv"
 			]
 		}
 	},
