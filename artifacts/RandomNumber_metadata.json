@@ -69,19 +69,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "max",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "mintNft",
 				"outputs": [
 					{
@@ -91,19 +78,6 @@
 					}
 				],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "start",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -162,11 +136,11 @@
 			]
 		},
 		"RandomNumber.sol": {
-			"keccak256": "0xce211987ec12db89eabecf4c8a2748d8e6db78f1aa814c772bc817f5375b0087",
+			"keccak256": "0xa52dace6b95b72ca02814dff0209874e3e2125319e5b6b45f1da9f8f4749ee54",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e78163dd9313752ba09066eaf2a832836432cc5e35d6890b076bd0e4a8d89f2c",
-				"dweb:/ipfs/QmZ6sPRDr4t9e3eG4PnmAVu9LNMcsHh3AH9oyViZn5N6gL"
+				"bzz-raw://32320ac224471f2e32be663ddf77f46df2d9ce66f8d33435aa2850d471ddf922",
+				"dweb:/ipfs/QmSWXNf9bYwBzPsoSSVFy16eLjacLxQCPrDo7bcEkNprbj"
 			]
 		}
 	},

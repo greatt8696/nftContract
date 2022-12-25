@@ -8,9 +8,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "exchangeOperatorCA",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "maxMint",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -180,6 +180,19 @@
 						"internalType": "uint256[]",
 						"name": "",
 						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRandomNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -701,11 +714,11 @@
 			]
 		},
 		"UnitToken.sol": {
-			"keccak256": "0x0c06bf9682a09f5d6d843d844906e0d68ef837021dce415c73d385353cadcc6c",
+			"keccak256": "0x313b69ea0880fb6752c7cc4d4cfc5d7fb95c93c648d7351e2739bfb015a9b885",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cfaecc0516b7211a1bc03e0daa2da626836987701528eabcec8a0f03b469b3e7",
-				"dweb:/ipfs/Qma8AZBzVYvWZpgHait4FTu6yQzVHXWYednb4zXYgW7KYv"
+				"bzz-raw://cec7335bde9b83962d69db7238c87a5e4bb2de6d7f1225cd66b0dae51df88131",
+				"dweb:/ipfs/QmUE4eDx9PRiwgfNvN34SSjM7g7CXYLQBxnJW4x2PWX9Hy"
 			]
 		}
 	},

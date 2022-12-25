@@ -440,7 +440,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"GgyuToken.sol": "GgyuToken"
+			"ggyuToken.sol": "GgyuToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -494,12 +494,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"GgyuToken.sol": {
-			"keccak256": "0x9ad0ee751e246c1719a388282474cb73a24a09e55f900f122e9c3f9e5f00e45c",
+		"ggyuToken.sol": {
+			"keccak256": "0x37aa003fca564f0b9f7cabc761b5b1ea95ab0a74eaf1013f3f88f3298e614820",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8671a19d2cf99536c33a3700aecb96881108a07cbc3f1a3f98ce7eb33a6f89b6",
-				"dweb:/ipfs/QmXXgLLAPkSWhnnz4qxrnLE3odqVy3VN35V2dxcWeJoQfz"
+				"bzz-raw://f48985f0bf645e7e14c0593f893a2c882c3a874fe3807b8dce4391230b7bb39c",
+				"dweb:/ipfs/QmPtXqWZkzGVVdc6twoQksqsgn7wrtLRSp6ZNw41YH3SVa"
 			]
 		}
 	},

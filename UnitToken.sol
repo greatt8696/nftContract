@@ -9,26 +9,45 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract UnitToken is ERC721, ERC721Enumerable, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
+    uint256 private _MAX;
+    uint256 private _start;
+    uint256[] public tokenIds;
 
     mapping(address => uint256[]) private _userOwnedTokenIds;
 
-    constructor(address exchangeOperatorCA) ERC721("UnitToken", "UNT") {
-        uint256 MINT_SIZE = 20;
-        for (uint256 idx = 0; idx < MINT_SIZE; idx++) {
-            safeMint(msg.sender);
-            // _safeMint(msg.sender, idx);
-        }
-        setApprovalForAll(exchangeOperatorCA, true);
+    // constructor(address exchangeOperatorCA) ERC721("UnitToken", "UNT") {
+    constructor(uint256 maxMint) ERC721("UnitToken", "UNT") {
+        // uint256 MINT_SIZE = 20;
+        // for (uint256 idx = 0; idx < MINT_SIZE; idx++) {
+        //     safeMint(msg.sender);
+        //     // _safeMint(msg.sender, idx);
+        // }
+        // setApprovalForAll(exchangeOperatorCA, true);
+
+        _MAX = maxMint;
+        _start = getRandomNumber();
     }
 
-    function _baseURI() internal view override returns (string memory) {
-        return "https://ggyu/";
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://localhost:3000/unitNft/";
     }
 
-    function safeMint(address to) public onlyOwner {
-        uint256 tokenId = _tokenIdCounter.current();
+    function getRandomNumber() public view onlyOwner returns (uint256) {
+        uint256 rand = uint256(
+            keccak256(
+                abi.encodePacked(msg.sender, block.number, block.timestamp)
+            )
+        ) % _MAX;
+        return rand;
+    }
+
+    function safeMint(address to) public onlyOwner returns (uint256) {
+        require(_tokenIdCounter.current() < _MAX, "max mint");
+        uint256 tokenId = ((_start + _tokenIdCounter.current()) % _MAX) + 1;
         _tokenIdCounter.increment();
+        tokenIds.push(tokenId);
         _safeMint(to, tokenId);
+        return tokenId;
     }
 
     // The following functions are overrides required by Solidity.

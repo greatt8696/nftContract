@@ -2,12 +2,12 @@
 pragma solidity ^0.8.17;
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+
 contract RandomNumber {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
-
-    uint256 public max;
-    uint256 public start;
+    uint256 private _MAX;
+    uint256 private _start;
 
     uint256[] public tokenIds;
 
@@ -19,26 +19,25 @@ contract RandomNumber {
     );
 
     constructor() {
-        max = 10;
-        start = getRandomNumber();
+        _MAX = 10;
+        _start = getRandomNumber();
     }
 
-    function getRandomNumber() public view returns (uint256) {
+    function getRandomNumber() public view returns  (uint256) {
         uint256 rand = uint256(
             keccak256(
                 abi.encodePacked(msg.sender, block.number, block.timestamp)
             )
-        ) % max;
-        // uint256 rand = uint256(keccak256(abi.  (msg.sender, block.number)));
+        ) % _MAX;
         return rand;
     }
 
     function mintNft() public returns (uint256) {
-        require(_tokenIdCounter.current() < max, "max mint");
-        uint256 tokenId = ((start + _tokenIdCounter.current()) % max) + 1;
+        require(_tokenIdCounter.current() < _MAX, "max mint");
+        uint256 tokenId = ((_start + _tokenIdCounter.current()) % _MAX) + 1;
         _tokenIdCounter.increment();
         tokenIds.push(tokenId);
-        emit Check(tokenId, max, start, tokenIds);
+        emit Check(tokenId, _MAX, _start, tokenIds);
         return tokenId;
     }
 

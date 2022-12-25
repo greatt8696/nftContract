@@ -9,22 +9,28 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "address",
-						"name": "applyer",
+						"name": "CA",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "tokenId",
 						"type": "uint256"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "price",
 						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "applyer",
+						"type": "address"
 					}
 				],
 				"name": "ApplySale",
@@ -47,6 +53,24 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "CA",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "buyer",
@@ -57,18 +81,6 @@
 						"internalType": "address",
 						"name": "seller",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"name": "Sale",
@@ -79,9 +91,21 @@
 				"inputs": [
 					{
 						"indexed": false,
-						"internalType": "string",
+						"internalType": "address",
 						"name": "CA",
-						"type": "string"
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
 					},
 					{
 						"indexed": true,
@@ -94,12 +118,6 @@
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"name": "TransferFrom",
@@ -109,7 +127,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "key",
+						"name": "nftName",
 						"type": "string"
 					},
 					{
@@ -127,7 +145,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "nftKey",
+						"name": "nftName",
 						"type": "string"
 					},
 					{
@@ -150,7 +168,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "nftKey",
+						"name": "nftName",
 						"type": "string"
 					},
 					{
@@ -168,7 +186,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "key",
+						"name": "nftName",
 						"type": "string"
 					}
 				],
@@ -187,7 +205,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "nftKey",
+						"name": "nftName",
 						"type": "string"
 					},
 					{
@@ -221,7 +239,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "key",
+						"name": "nftName",
 						"type": "string"
 					},
 					{
@@ -263,40 +281,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "nftKey",
-						"type": "string"
-					},
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -312,7 +296,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"NftExchanger.sol": "NftExchanger"
+			"nftExchanger.sol": "NftExchanger"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -342,12 +326,12 @@
 				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
 			]
 		},
-		"NftExchanger.sol": {
-			"keccak256": "0xf961ce7cb643c726e9d8e663ccc256e09b27fca5dfea1cd632eee80ed8b99d6f",
+		"nftExchanger.sol": {
+			"keccak256": "0x087968d27c3b97679126a6a95690e175a749b899676fd3db6f1fbbd1247877b3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://da5e7aef6b897c966e4c9305eac8c2d7cd286153495f042b218c76068ec12db1",
-				"dweb:/ipfs/QmYACVs5akJ2oDUmzG36EEzsMvAkxe7XdDxSJRM8ApJ6a6"
+				"bzz-raw://805a889d29cf413fb5139f2f174c40bd89b51ca3afdbf3abea0fb7cb1bd0e31f",
+				"dweb:/ipfs/QmdBiqU2qxzVaxxRR2iCghf1cL57goPCvWSi6nFQxYNoru"
 			]
 		}
 	},
